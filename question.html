@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body>
+    <section>
+        <div class="w-4/5 m-auto my-5">
+            <h1 class="text-center text-6xl font-semibold underline underline-offset-4 text-green-700">Questions Blog</h1>
+            <div class="my-20">
+                <h3 class="text-3xl font-bold">1. What is the difference between (map, forEach, Filter, Find)?</h3>
+                <p class="text-2xl font-normal my-5"><strong class="bg-orange-200 px-2 rounded">Answer:</strong><br><br> 
+                    <span class="font-semibold">Map:</span><span> The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value.</span><br><br>
+                    <span class="font-semibold">ForEach:</span><span> The forEach() method executes a provided function once for each array element.</span>
+                    <br><br>
+                    <span class="font-semibold">Filter:</span><span> Definition and Usage. The filter() method creates a new array filled with elements that pass a test provided by a function. The filter() method does not execute the function for empty elements. The filter() method does not change the original array.</span>
+                    <br><br>
+                    <span class="font-semibold">Find:</span><span> The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.</span>
+                </p>
+            </div>
+            <div class="my-20">
+                <h3 class="text-3xl font-bold">2. What is the difference between (LocalStorage, SectionStorage, Cookies)?</h3>
+                <p class="text-2xl font-normal my-5"><strong class="bg-orange-200 px-2 rounded">Answer:</strong><br><br>
+                    <span class="font-semibold">LocalStorage:</span><span> The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.</span>
+                    <br><br>
+                    <span class="font-semibold">SessionStorage:</span><span> The read-only sessionStorage property accesses a session Storage object for the current origin. sessionStorage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.</span>
+                    <br><br>
+                    <span class="font-semibold">Cookies:</span><span> The Document property cookie lets you read and write cookies associated with the document. It serves as a getter and setter for the actual values of the cookies.</span>
+            </div>
+            <div class="my-20">
+                <h3 class="text-3xl font-bold">3. What is Event loop? How the event loop works?</h3>
+                <p class="text-2xl font-normal my-5"><strong class="bg-orange-200 px-2 rounded">Answer:</strong><br><br>
+                  <span class="font-semibold">Event Loop:</span><span> JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</span></p>
+            </div>
+        </div>
+        <div class="w-4/5 m-auto my-5">
+          <h1 class="text-center text-6xl font-semibold underline underline-offset-4 text-green-700">(NoChange.js) Extra question</h1>
+          <div class="my-20">
+            <h3 class="text-3xl font-bold">1. What is the function of quizTimer?</h3>
+            <p class="text-2xl font-normal my-5"><strong class="bg-orange-200 px-2 rounded">Answer:</strong><br><br>
+              <span class="font-semibold">quizTimer:</span><span> The quizTimer function is responsible for displaying a timer on the webpage for a quiz. The function takes a parameter dismiss, which when set to true clears the timer interval and stops the timer. Otherwise, the function sets an interval of one second that updates the timer display every second.</span></p>
+        </div>
+        <div class="my-20">
+          <h3 class="text-3xl font-bold">2. What is the function of ChooseQuize?</h3>
+          <p class="text-2xl font-normal my-5"><strong class="bg-orange-200 px-2 rounded">Answer:</strong><br><br>
+            <span class="font-semibold">ChooseQuize:</span><span> The chooseQuiz function is used in a quiz application to allow the user to select an answer for a particular quiz question. It takes two arguments: index, which is the index of the quiz question being answered, and givenAns, which is the answer chosen by the user.
+            </span></p>
+      </div>
+        </div>
+    </section>
+</body>
+</html>
